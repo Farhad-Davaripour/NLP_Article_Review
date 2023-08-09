@@ -1,3 +1,7 @@
+# Introduction
+Natural Language Processing (`NLP`) is a field of Artificial Intelligence (`AI`) that deals with the interaction between human language and computers. Some real life applications of NLP are: Google Translate, Chat bots, Grammarly, Chat GPT, and etc [3]. 
+
+# Steps
 The common steps in Natural Language Processing (NLP) involves:
 1. `Tokenization`: The process of breaking down sentences into individual word also called tokens. This is typically the first step in converting unstructured data into meaningful information [1]. Example:  
 ><pre> Sentence = "John decided to go to New York to attend the conference."</pre>
@@ -32,9 +36,14 @@ The common steps in Natural Language Processing (NLP) involves:
 
 The words with higher score indicates that the word is specifics to that document and does not appear in others and hence more informative. 
 
+9. `Word Embedding`: It is a technique to convert the words within a document to a multi dimensional vector space. Word2Vec is one popular method used in word embedding, which employs two techniques: Continuous Bag of Words (`CBOW`) and `Skip Gram`, where the former predicts the target word based on the surrounding word, while the latter predicts the surrounding words based on the target word. The two technique are then used in Word2Vec to generate word embeddings and capture the semantic relationship between the words.
  
-
+# Libraries
+The following libraries are quite powerful and powerful in performing NLP tasks:
+- Natural Language Toolkit (`NLTK`): It is a python library which encompasses text processing libraries to perform tasks such as: Tokenization, Classification, Stemming, Tagging, Parsing, etc. 
+- Beautiful Soup 4 (`BS4`): It is a python library used to pull specific content from HTML and XML documents, assisting to cleanup the markups and HTML tags.
 
 # Reference:
 1. [Towards AI: Natural Language Processing Beginner’s Guide](https://pub.towardsai.net/natural-language-processing-beginners-guide-461d569b70e3)
-1. [Natural Language Processing Basics for Beginners](https://medium.com/p/ba1577b7a5f8)
+2. [Medium: Natural Language Processing Basics for Beginners](https://medium.com/p/ba1577b7a5f8)
+3. [Towards Data Science: Natural Language Processing (NLP) for Beginners](https://towardsdatascience.com/natural-language-processing-nlp-for-beginners-6d19f3eedfea)
