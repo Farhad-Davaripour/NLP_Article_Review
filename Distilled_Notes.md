@@ -36,7 +36,9 @@ The common steps in Natural Language Processing (NLP) involves:
 
 The words with higher score indicates that the word is specifics to that document and does not appear in others and hence more informative. 
 
-9. `Word Embedding`: It is a technique to convert the words within a document to a multi dimensional vector space. Word2Vec is one popular method used in word embedding, which employs two techniques: Continuous Bag of Words (`CBOW`) and `Skip Gram`, where the former predicts the target word based on the surrounding word, while the latter predicts the surrounding words based on the target word. The two technique are then used in Word2Vec to generate word embeddings and capture the semantic relationship between the words.
+9. `Word Embedding`: It is a technique to convert the words within a document to a multi dimensional vector space. Word2Vec is one popular method used in word embedding, which employs two techniques: Continuous Bag of Words (`CBOW`) and `Skip Gram`, where the former predicts the target word based on the surrounding words, while the latter predicts the surrounding words based on the target word. The two technique are then used in Word2Vec to generate word embeddings and capture the semantic relationship between the words.
+10. `Language Models (LM)`: LM plays a fundamental role in NLP tasks primarily used to predict the next word in the sequence based on the words already observed. The `Recurrent Neural Network (RNN)` has been critical in the development of modern LMs, as unlike traditional neural networks, it contains loops that make it particularly suitable for tasks that involve sequence of data like text [4]. This is done by including a hidden cell which function as a memory system. These cells are continuously updated and hold a compressed, fixed-length vector representation of the previous sequence, which is utilized to predict the next word in the sequence.
+
  
 # Libraries
 The following libraries are quite powerful and powerful in performing NLP tasks:
@@ -47,3 +49,5 @@ The following libraries are quite powerful and powerful in performing NLP tasks:
 1. [Towards AI: Natural Language Processing Beginner’s Guide](https://pub.towardsai.net/natural-language-processing-beginners-guide-461d569b70e3)
 2. [Medium: Natural Language Processing Basics for Beginners](https://medium.com/p/ba1577b7a5f8)
 3. [Towards Data Science: Natural Language Processing (NLP) for Beginners](https://towardsdatascience.com/natural-language-processing-nlp-for-beginners-6d19f3eedfea)
+4. [Towards Data Science: A collection of must known resources for every Natural Language Processing (NLP) practitioner](https://towardsdatascience.com/a-collection-of-must-known-pre-requisite-resources-for-every-natural-language-processing-nlp-a18df7e2e027)
+
