@@ -36,18 +36,14 @@ The common steps in Natural Language Processing (NLP) involves:
 
 The words with higher score indicates that the word is specifics to that document and does not appear in others and hence more informative. 
 
-9. `Word Embedding`: It is a technique to convert the words within a document to a multi dimensional vector space. Word2Vec is one popular method used in word embedding, which employs two techniques: Continuous Bag of Words (`CBOW`) and `Skip Gram`, where the former predicts the target word based on the surrounding words, while the latter predicts the surrounding words based on the target word. The two technique are then used in Word2Vec to generate word embeddings and capture the semantic relationship between the words. Example:  
-> sentences = [
-    ['this', 'is', 'the', 'first', 'sentence', 'for', 'word2vec'],
-    ['this', 'is', 'the', 'second', 'sentence'],
-    ['yet', 'another', 'sentence'],
-    ['one', 'more', 'sentence'],
-    ['and', 'the', 'final', 'sentence']
-] 
+9. `Word Embedding`: It is a technique to convert the words within a document to a multi dimensional vector space. Word2Vec is one popular method used in word embedding, which employs two techniques: Continuous Bag of Words (`CBOW`) and `Skip Gram`, where the former predicts the target word based on the surrounding words, while the latter predicts the surrounding words based on the target word. The two technique are then used in Word2Vec to generate word embeddings and capture the semantic relationship between the words.   
 
-In the example above, the sentences are vectorized using Word2Vec. In order to visualize it, Principal Component Analysis (PCA) is used to reduce the feature space to 2 dimensions. The plot below shows the vectorized tokens with respect to PC1 and PC2. These components represent directions in which the data varies the most, and positioning of tokens in this space can give insights into their relationships, although the specific interpretation can be complex.   
+As an example, the sentences of the first 20% of the `Brown University Standard Corpus of Present-Day American English` are vectorized using Word2Vec. In order to visualize it, Principal Component Analysis (PCA) is used to reduce the vector space to 2 dimensions. The plot below shows the vectorized tokens with respect to PC1 and PC2. These components represent directions in which the data varies the most, and positioning of tokens in this space can give insights into their relationships in terms of semantic meaning, although the specific interpretation can be complex.   
 
-> <img src="Figures\PCA_Word2Vec.png" alt="Word2Vec_Biplot" width="600"/>      
+ <img src="Figures\PCA_Word2Vec.png" alt="Word2Vec_Biplot" width="600"/>     
+
+ Check out the code snippet which generated this plot from the link below:
+ [Link](https://colab.research.google.com/drive/1KzpbhtlThgvFZf5UZNL1vnQ5de13lM9W)    
 
 10. `Language Models (LM)`: LM plays a fundamental role in NLP tasks primarily used to predict the next word in the sequence based on the words already observed. The `Recurrent Neural Network (RNN)` has been critical in the development of modern LMs, as unlike traditional neural networks, it contains loops that make it particularly suitable for tasks that involve sequence of data like text [4]. This is done by including a hidden cell which function as a memory system. These cells are continuously updated and hold a compressed, fixed-length vector representation of the previous sequence, which is utilized to predict the next word in the sequence.
 11. `Contextual Word EMbedding`: Unlike the traditional word embedding which assigns one single meaning to a unique word or in other words represents each unique word with a corresponding unique vector, in contextual word embedding, a unique word could have multiple vector representations based on the context it was used in in the document. This is done using LMs to understand the meaning of the word in a given context. This helps to handle embeddings for words that could have a totally difference meaning when used in a difference context (e.g., bat). ELMo which is short for `Embeddings from Language Models` is used for contextual work embeddings which utilizes multi layer bidirectional Long Short Term Memory (`LSTM`) models which is a variation of the RNN architecture.
