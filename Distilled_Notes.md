@@ -36,9 +36,23 @@ The common steps in Natural Language Processing (NLP) involves:
 
 The words with higher score indicates that the word is specifics to that document and does not appear in others and hence more informative. 
 
-9. `Word Embedding`: It is a technique to convert the words within a document to a multi dimensional vector space. Word2Vec is one popular method used in word embedding, which employs two techniques: Continuous Bag of Words (`CBOW`) and `Skip Gram`, where the former predicts the target word based on the surrounding words, while the latter predicts the surrounding words based on the target word. The two technique are then used in Word2Vec to generate word embeddings and capture the semantic relationship between the words.
+9. `Word Embedding`: It is a technique to convert the words within a document to a multi dimensional vector space. Word2Vec is one popular method used in word embedding, which employs two techniques: Continuous Bag of Words (`CBOW`) and `Skip Gram`, where the former predicts the target word based on the surrounding words, while the latter predicts the surrounding words based on the target word. The two technique are then used in Word2Vec to generate word embeddings and capture the semantic relationship between the words. Example:  
+> sentences = [
+    ['this', 'is', 'the', 'first', 'sentence', 'for', 'word2vec'],
+    ['this', 'is', 'the', 'second', 'sentence'],
+    ['yet', 'another', 'sentence'],
+    ['one', 'more', 'sentence'],
+    ['and', 'the', 'final', 'sentence']
+] 
+
+In the example above, the sentences are vectorized using Word2Vec. In order to visualize it, Principal Component Analysis (PCA) is used to reduce the feature space to 2 dimensions. The plot below shows the vectorized tokens with respect to PC1 and PC2. These components represent directions in which the data varies the most, and positioning of tokens in this space can give insights into their relationships, although the specific interpretation can be complex.   
+
+> <img src="Figures\PCA_Word2Vec.png" alt="Word2Vec_Biplot" width="600"/>      
+
 10. `Language Models (LM)`: LM plays a fundamental role in NLP tasks primarily used to predict the next word in the sequence based on the words already observed. The `Recurrent Neural Network (RNN)` has been critical in the development of modern LMs, as unlike traditional neural networks, it contains loops that make it particularly suitable for tasks that involve sequence of data like text [4]. This is done by including a hidden cell which function as a memory system. These cells are continuously updated and hold a compressed, fixed-length vector representation of the previous sequence, which is utilized to predict the next word in the sequence.
 11. `Contextual Word EMbedding`: Unlike the traditional word embedding which assigns one single meaning to a unique word or in other words represents each unique word with a corresponding unique vector, in contextual word embedding, a unique word could have multiple vector representations based on the context it was used in in the document. This is done using LMs to understand the meaning of the word in a given context. This helps to handle embeddings for words that could have a totally difference meaning when used in a difference context (e.g., bat). ELMo which is short for `Embeddings from Language Models` is used for contextual work embeddings which utilizes multi layer bidirectional Long Short Term Memory (`LSTM`) models which is a variation of the RNN architecture.
+12. `Transfer Learning`: This concept involves leveraging a pre-trained model for a new but related task. Within the domain of transfer learning, methods like `Discriminative Fine Tuning` and `Slanted Triangular Learning` are grouped under `Universal Language Fine Tuning (ULfit)`. Discriminative Fine Tuning adjusts different layers at varying (learning) rates as part of the fine-tuning process, while Slanted Triangular Learning first adapts quickly, then more slowly. This approach obtains a balance by quickly adapting to the new task while at the same time retaining the knowledge gained during the pre-training process [4].
+
 
 # Libraries
 The following libraries are quite powerful and powerful in performing NLP tasks:
