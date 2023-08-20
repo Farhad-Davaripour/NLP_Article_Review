@@ -1,4 +1,4 @@
-# Introduction
+h Introduction
 Natural Language Processing (`NLP`) is a field of Artificial Intelligence (`AI`) that deals with the interaction between human language and computers. Some real life applications of NLP are: Google Translate, Chat bots, Grammarly, Chat GPT, and etc [3]. 
 
 # Essential Steps in a Text Processing Pipeline
@@ -73,8 +73,7 @@ As an example, the sentences of the first 20% of the `Brown University Standard 
 
 Google, in collaboration with Carnegie Mellon University, developed the Extra Large Language Model (XLNet). Unlike BERT, which utilizes a `bidirectional transformer` and processes all words in the input sequence simultaneously, XLNet employs an `autoregressive approach` that predicts each word sequentially, incorporating all previous words in the process. This allows XLNet to capture the dependencies between the words in a sequence more effectively than BERT's bidirectional method. By considering the entire context of a given word rather than just the preceding or subsequent words, XLNet has been able to outperform BERT in several tasks. 
 
-
-
+19\. `Sentiment Analysis`: Sentiment analysis is a computational technique used to detect and categorize attitudes and opinions in text, applicable at various granularity levels like documents, sentences, or paragraphs. When dealing with specialized industry-specific language, it might be necessary to fine-tune a large language model to ensure it understands the unique terminology. If the document does not contain industry-specific language, pre-trained large-scale models (LLMs) can be used directly. Though training a model from scratch is an option, it requires considerable effort and resources, so it's generally reserved as a last resort when absolutely necessary.
 
 # Libraries
 The following libraries are quite powerful and powerful in performing NLP tasks:
