@@ -67,7 +67,7 @@ As an example, the sentences of the first 20% of the `Brown University Standard 
 
 16\. `Transformers`: The transformer deals with sequence data, but unlike RNN it incorporates attention mechanism which considerably enhances its robustness. In simple terms, instead of using a single fixed-length vector like RNN, the transformer uses all the vectorized tokens within the document (that are processed by the attention mechanism based on e.g., context and similarity) simultaneously.
 
-17/. `GPT and BERT`: OpenAI's GPT and Google's BERT utilize transfer learning and attention mechanisms in NLP. Unlike LSTM, they process different parts of sentences. BERT's distinct feature is its bidirectional approach, examining both sides of a word during training, along with a "masking" technique to prevent future information from influencing current training. This contrasts with GPT's unidirectional focus.
+17\. `GPT and BERT`: OpenAI's GPT and Google's BERT utilize transfer learning and attention mechanisms in NLP. Unlike LSTM, they process different parts of sentences. BERT's distinct feature is its bidirectional approach, examining both sides of a word during training, along with a "masking" technique to prevent future information from influencing current training. This contrasts with GPT's unidirectional focus.
 
 # Libraries
 The following libraries are quite powerful and powerful in performing NLP tasks:
