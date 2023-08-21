@@ -91,6 +91,15 @@ Late Fusion: Training separate models for each data type and combining their pre
 
 21\. `Question Answering (QA)`: Question and Answering (QA) systems are diverse and sophisticated, encompassing different categories and approaches. `Factoid QA` provides straightforward answers to specific queries such as "Who" or "When," while `Non-Factoid QA` delves into more complex interpretations and reasoning for questions like "Why is the sky blue?" `Visual QA` answers questions about images or videos, and the field also includes `Open-Domain QA`, covering general knowledge, and `Closed-Domain QA`, which focuses on specialized areas like medicine or engineering. Various strategies can be employed to answer these questions, ranging from `Rule-Based methods` that use predefined rules, `Retrieval-Based methods` that fetch relevant content, `Generative approaches` that train models to answer, to `Hybrid systems` that combine different techniques. Modern technology's advancement has been marked by the utilization of large language models like BERT or GPT, enhancing the capability and accuracy of QA systems across these diverse domains.
 
+22\. `Information Retrieval (IR)`: IR is a fundamental component of search engines like Google. It involves collecting and retrieving relevant information based on user queries from vast databases filled with text data. Some of the core technologies in this field include:
+Boolean Model: This approach searches for specific tokens mentioned in a query and retrieves documents containing all of them, such as "apple" and "banana."
+Vector-Based Models: These models represent documents and queries as vectors in multi-dimensional space. The system finds the documents with the smallest cosine distance to the query vector, effectively locating the most relevant documents.
+In addition to these technologies, there are other significant areas in IR:
+Personalization: This tailors search results according to the user's behavior, providing more individualized results.
+Page Ranking: Algorithms like PageRank assess and rank pages based on the quality and quantity of links pointing to a particular document or website. This ensures the most authoritative sources are displayed prominently.
+Indexing: By organizing data into a structured format, indexing allows faster searches, making the retrieval process more efficient.
+Query Expansion: This technique involves expanding a query by finding synonyms or related terms. By broadening the search, it helps to find more relevant documents.
+
 # Libraries
 The following libraries are quite powerful and powerful in performing NLP tasks:
 - Natural Language Toolkit (`NLTK`): It is a python library which encompasses text processing libraries to perform tasks such as: Tokenization, Classification, Stemming, Tagging, Parsing, etc. 
