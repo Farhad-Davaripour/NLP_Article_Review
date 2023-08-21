@@ -89,6 +89,8 @@ Early Fusion: A simple concatenation at the early stage of processing.
 Intermediate Fusion: Utilizes attention mechanisms to weight data from different sources based on their relevance or contribution.
 Late Fusion: Training separate models for each data type and combining their predictions at the end.
 
+21\. `Question Answering (QA)`: Question and Answering (QA) systems are diverse and sophisticated, encompassing different categories and approaches. `Factoid QA` provides straightforward answers to specific queries such as "Who" or "When," while `Non-Factoid QA` delves into more complex interpretations and reasoning for questions like "Why is the sky blue?" `Visual QA` answers questions about images or videos, and the field also includes `Open-Domain QA`, covering general knowledge, and `Closed-Domain QA`, which focuses on specialized areas like medicine or engineering. Various strategies can be employed to answer these questions, ranging from `Rule-Based methods` that use predefined rules, `Retrieval-Based methods` that fetch relevant content, `Generative approaches` that train models to answer, to `Hybrid systems` that combine different techniques. Modern technology's advancement has been marked by the utilization of large language models like BERT or GPT, enhancing the capability and accuracy of QA systems across these diverse domains.
+
 # Libraries
 The following libraries are quite powerful and powerful in performing NLP tasks:
 - Natural Language Toolkit (`NLTK`): It is a python library which encompasses text processing libraries to perform tasks such as: Tokenization, Classification, Stemming, Tagging, Parsing, etc. 
