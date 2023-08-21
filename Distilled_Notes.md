@@ -76,6 +76,7 @@ Google, in collaboration with Carnegie Mellon University, developed the Extra La
 19\. `Sentiment Analysis`: Sentiment analysis is a computational technique used to detect and categorize attitudes and opinions in text, applicable at various granularity levels like documents, sentences, or paragraphs. 
 
 Generally there are three approached to perform sentiment analysis. When dealing with specialized industry-specific language, it might be necessary to fine-tune a large language model to ensure it understands the unique terminology. If the document does not contain industry-specific language, pre-trained large-scale models (LLMs) can be used directly. Though training a model from scratch is an option, it requires considerable effort and resources, so it's generally reserved as a last resort when absolutely necessary.
+20\. `Multimodel learning`: Multimodal learning seeks to replicate the human brain's ability to integrate data from different sources, such as text, images, audio, and video. By capturing the complex underlying structure of data, this approach can improve NLP tasks like providing captions to pictures based on text or searching using both visual and text data. Technologies like the multimodal Transformer can be leveraged to train models that take advantage of data from different modalities, enhancing their understanding and application in various tasks.
 
 # Libraries
 The following libraries are quite powerful and powerful in performing NLP tasks:
