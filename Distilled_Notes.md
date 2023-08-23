@@ -1,4 +1,6 @@
-h Introduction
+[TOC]
+
+# Introduction
 Natural Language Processing (`NLP`) is a field of Artificial Intelligence (`AI`) that deals with the interaction between human language and computers. Some real life applications of NLP are: Google Translate, Chat bots, Grammarly, Chat GPT, and etc [3]. 
 
 # Essential Steps in a Text Processing Pipeline
@@ -106,6 +108,13 @@ Query Expansion: This technique involves expanding a query by finding synonyms o
 - `Openness`: Openness aims at making the model explainable and transparent. So the decision (i.e., model predictions) could be traced back.
 - `Security`: An important consideration in any NLP application is to protect sensitive/confidential data by e.g., anonymizing the data and complying with regulatory guidelines. 
 - `Cultural Consideration`: This deals with exclusivity and acknowledgement of all cultures in data and decision making process. This also includes incorporating nuances of difference cultures as recognizing norms and acceptability may vary widely between cultures.
+
+24\. `Evaluation Metrics in NLP`: As many NLP tasks could be framed as a  classification problem, hence the metrics used in supervised classification models could often be applicable to NLP tasks, such as: 
+- `Accuracy`: Despite simplicity it would be a good evaluative metrics unless dealing with imbalanced dataset. 
+- `Precision` is the ratio of true positive predictions to the sum of true positive and false positive.
+- `Recall` is the ratio of true positive to the sum of true positive and false negative.  
+- `F1 Score` is the harmonic mean of precision and recall.
+Note that there are other performance metrics that could be more suitable for an specific NLP task.
 
 # Libraries
 The following libraries are quite powerful and powerful in performing NLP tasks:
