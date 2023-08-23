@@ -100,6 +100,13 @@ Page Ranking: Algorithms like PageRank assess and rank pages based on the qualit
 Indexing: By organizing data into a structured format, indexing allows faster searches, making the retrieval process more efficient.
 Query Expansion: This technique involves expanding a query by finding synonyms or related terms. By broadening the search, it helps to find more relevant documents.
 
+23\. `Ethics in NLP`: Ethics in natural language processing can be broadly categorized into five pillars, including bias, fairness, openness, security of data, and cultural consideration.
+- `Bias`:  Bias refers to any discriminatory decision-making by an NLP model. It may manifest at different stages, such as `Data Collection`, e.g., by excluding or underrepresenting a particular group (e.g., race or gender), `data pre-processing`, e.g., by filling missing data with average values or other techniques that may emphasize the dominant representation, model training, e.g., overfitting which might lead to favoring a particular representation, and interpretation, e.g., using the model prediction in a way that could support a particular group. As for mitigating strategies, using balanced data and and techniques that identifies and addresses biasses could be used.
+- `Fairness`: Fairness refers to the equal treatment of groups and individuals within the context of the model's application. An example might be ensuring equity in employee salaries across gender or ethnic lines.  The initial step towards fairness is defining what it means in the particular context, followed by implementing proper metrics and evaluations.
+- `Openness`: Openness aims at making the model explainable and transparent. So the decision (i.e., model predictions) could be traced back.
+- `Security`: An important consideration in any NLP application is to protect sensitive/confidential data by e.g., anonymizing the data and complying with regulatory guidelines. 
+- `Cultural Consideration`: This deals with exclusivity and acknowledgement of all cultures in data and decision making process. This also includes incorporating nuances of difference cultures as recognizing norms and acceptability may vary widely between cultures.
+
 # Libraries
 The following libraries are quite powerful and powerful in performing NLP tasks:
 - Natural Language Toolkit (`NLTK`): It is a python library which encompasses text processing libraries to perform tasks such as: Tokenization, Classification, Stemming, Tagging, Parsing, etc. 
