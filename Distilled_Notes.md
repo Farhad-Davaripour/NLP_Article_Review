@@ -128,30 +128,27 @@ Google, in collaboration with Carnegie Mellon University, developed the `Extra L
 Sentiment analysis is a computational technique used to detect and categorize attitudes and opinions in text, applicable at various granularity levels like documents, sentences, or paragraphs. Generally there are three approached to perform sentiment analysis. When dealing with specialized industry-specific language, it might be necessary to fine-tune a large language model to ensure it understands the unique terminology. If the document does not contain industry-specific language, pre-trained large-scale models (LLMs) can be used directly. Though training a model from scratch is an option, it requires considerable effort and resources, so it's generally reserved as a last resort when absolutely necessary.
 
 ## Multimodel learning
-Multimodal learning is an innovative approach that seeks to emulate the way the human brain processes information by integrating data from different sources like text, images, and audio. This integration can significantly enhance various applications, such as providing captions to images based on text, or searching using both visual and text data.
+Multimodel learning is an innovative approach that seeks to emulate the way the human brain processes information by integrating data from different sources like text, images, and audio. This integration can be applied to various applications, such as providing captions to images based on text and the picture itself, or searching using both visual and text data.
 
-The encoding and vectorizing of different data sources are achieved through:
-Text: Conversion into numerical values using embeddings like Word2Vec, developed by Google.
-Images: Feature extraction and vectorization through Convolutional Neural Networks (CNNs).
-Audio: Utilization of spectrograms or time-frequency domain techniques for feature extraction and vectorization.
+The encoding and vectorizing of different data sources are achieved through, conversion into numerical values using embeddings like Word2Vec for text data, Feature extraction and vectorization through Convolutional Neural Networks  (CNNs) for visual data, and utilization of spectrograms or time-frequency domain techniques for feature extraction and vectorization for audio data.
 
-Once vectorized, these diverse data sources are integrated using various fusion techniques:
-Early Fusion: A simple concatenation at the early stage of processing.
-Intermediate Fusion: Utilizes attention mechanisms to weight data from different sources based on their relevance or contribution.
-Late Fusion: Training separate models for each data type and combining their predictions at the end.
+Once vectorized, these diverse data sources are integrated using various fusion techniques such as:
+- Early Fusion: A simple concatenation at the early stage of processing.
+- Intermediate Fusion: Utilizes attention mechanisms to weight data from different sources based on their relevance or contribution.
+- Late Fusion: Training separate models for each data type and combining their predictions at the end.
 
 ## Question Answering (QA)
-Question and Answering (QA) systems are diverse and sophisticated, encompassing different categories and approaches. `Factoid QA` provides straightforward answers to specific queries such as "Who" or "When," while `Non-Factoid QA` delves into more complex interpretations and reasoning for questions like "Why is the sky blue?" `Visual QA` answers questions about images or videos, and the field also includes `Open-Domain QA`, covering general knowledge, and `Closed-Domain QA`, which focuses on specialized areas like medicine or engineering. Various strategies can be employed to answer these questions, ranging from `Rule-Based methods` that use predefined rules, `Retrieval-Based methods` that fetch relevant content, `Generative approaches` that train models to answer, to `Hybrid systems` that combine different techniques. Modern technology's advancement has been marked by the utilization of large language models like BERT or GPT, enhancing the capability and accuracy of QA systems across these diverse domains.
+Question and Answering (QA) systems are diverse and sophisticated, encompassing different categories and approaches. `Factoid QA` provides straightforward answers to specific queries such as Who, When, where, while `Non-Factoid QA` delves into more complex interpretations and reasoning for questions that deals with how and why, like "Why is the sky blue?" `Visual QA` answers questions about images or videos, and the field also includes `Open-Domain QA`, covering general knowledge, and `Closed-Domain QA`, which focuses on specialized areas like medicine or engineering. Various strategies can be employed to answer these questions, ranging from `Rule-Based methods` that use predefined rules, `Retrieval-Based methods` that fetch relevant content, `Generative approaches` that train models to answer, to `Hybrid systems` that combine different techniques.
 
 ## Information Retrieval (IR)
 IR is a fundamental component of search engines like Google. It involves collecting and retrieving relevant information based on user queries from vast databases filled with text data. Some of the core technologies in this field include:
-Boolean Model: This approach searches for specific tokens mentioned in a query and retrieves documents containing all of them, such as "apple" and "banana."
-Vector-Based Models: These models represent documents and queries as vectors in multi-dimensional space. The system finds the documents with the smallest cosine distance to the query vector, effectively locating the most relevant documents.
+`Boolean Model`: This approach searches for specific tokens mentioned in a query and retrieves documents that for instance contains all of them, such as "apple" and "banana."
+`Vector-Based Models`: These models represent documents and queries as vectors in multi-dimensional space. The system finds the documents with the smallest cosine angle to the query vector, effectively locating the most relevant documents.
 In addition to these technologies, there are other significant areas in IR:
-Personalization: This tailors search results according to the user's behavior, providing more individualized results.
-Page Ranking: Algorithms like PageRank assess and rank pages based on the quality and quantity of links pointing to a particular document or website. This ensures the most authoritative sources are displayed prominently.
-Indexing: By organizing data into a structured format, indexing allows faster searches, making the retrieval process more efficient.
-Query Expansion: This technique involves expanding a query by finding synonyms or related terms. By broadening the search, it helps to find more relevant documents.
+`Personalization`: This tailors search results according to the user's behavior, providing more individualized results.
+`Page Ranking`: Algorithms like `PageRank` assess and rank pages based on the quality and quantity of links pointing to a particular document or website.
+`Indexing`: By organizing data into a structured format, indexing allows faster searches, making the retrieval process more efficient.
+`Query Expansion`: This technique involves expanding a query by finding synonyms or related terms. By broadening the search, it helps to find more relevant documents.
 
 ## Ethics in NLP
 Ethics in natural language processing can be broadly categorized into five pillars, including bias, fairness, openness, security of data, and cultural consideration.
