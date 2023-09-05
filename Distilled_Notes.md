@@ -167,7 +167,7 @@ As many NLP tasks could be framed as a  classification problem, hence the metric
 Note that there are other performance metrics that could be more suitable for an specific NLP task.
 
 # Libraries
-The following libraries are quite powerful and powerful in performing NLP tasks:
+The following libraries are quite powerful in performing NLP tasks:
 - Natural Language Toolkit (`NLTK`): It is a python library which encompasses text processing libraries to perform tasks such as: Tokenization, Classification, Stemming, Tagging, Parsing, etc. 
 - Beautiful Soup 4 (`BS4`): It is a python library used to pull specific content from HTML and XML documents, assisting to cleanup the markups and HTML tags.
 
